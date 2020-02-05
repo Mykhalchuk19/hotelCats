@@ -1,0 +1,139 @@
+.close
+  width: 20px
+  height: 20px
+  position: relative
+  background-color: #fff
+  border: none
+  margin-left: 90%
+  margin-bottom: 25px
+  cursor: pointer
+  &__line
+    position: absolute
+    display: block
+    height: 2px
+    width: 20px
+    background-color: $color-text
+  &__line-first
+    transform: rotate(45deg)
+  &__line-second
+    transform: rotate(-45deg)
+
+.booking, .thank
+  position: absolute
+  z-index: 15
+  left: 50%
+  transform: translate(-50%, 0)
+  width: 290px
+  height: auto
+  padding: 20px 15px 60px 15px
+  background-color: #fff
+  border-radius: 10px
+  box-shadow: 0 0 10px lightgrey
+  text-align: center
+  @include breakpoint($disp__tablet)
+    width: 502px
+  @include breakpoint($disp__desktop)
+    width: 570px
+  &__title
+    font-family: $font-Rubik
+    font-size: 24px
+    font-weight: bold
+    color: $color-text
+    margin-bottom: 40px
+  &__form
+    width: 100%
+    @include breakpoint($disp__desktop)
+      width: 85%
+      margin: 0 auto
+  &__input
+    width: 100%
+    height: 52px
+    border-radius: 25px
+    border: 1px solid lightgrey
+    font-family: $font-Lato
+    color: $color-text
+    font-size: 15px
+    padding-left: 20px
+    margin-bottom: 20px
+  &__date-arrival
+    font-family: $font-Lato
+    color: $color-text
+    font-size: 15px
+    text-align: left
+    margin-bottom: 15px
+  &__text
+    font-family: $font-Lato
+    color: $color-text
+    font-size: 15px
+  &__date
+    width: 41%
+    height: 52px
+    border-radius: 25px
+    border: 1px solid lightgrey
+    font-family: $font-Lato
+    color: $color-text
+    font-size: 15px
+    text-align: center
+    margin-bottom: 20px
+    @include breakpoint($disp__tablet)
+      margin-bottom: 40px
+  &__button
+    position: relative
+    width: 260px
+    height: 50px
+    background-color: #FF7236
+    border-radius: 25px
+    border: 1px solid #FF7236
+    color: $color-white
+    font-family: $font-Lato
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    cursor: pointer
+  .button-text
+    position: absolute
+    left: 25px
+    top: 50%
+    transform: translate(0,-50%)
+  .raw-icon
+    margin-right: 7px
+    float: right
+    padding: 5px
+    height: 36px
+    width: 36px
+    border-radius: 50%
+    background-color: $color-white
+
+.thank
+  &__text
+    font-family: $font-Lato
+    font-size: 16px
+    color: $color-text
+    text-align: center
+    margin-bottom: 30px
+  &__button
+    position: relative
+    width: 122px
+    height: 50px
+    background-color: #FF7236
+    border-radius: 25px
+    border: 1px solid #FF7236
+    color: $color-white
+    font-family: $font-Lato
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    cursor: pointer
+  .button-text
+    position: absolute
+    left: 40px
+    top: 50%
+    transform: translate(0,-50%)
+  .raw-icon
+    margin-right: 7px
+    float: right
+    padding: 5px
+    height: 36px
+    width: 36px
+    border-radius: 50%
+    background-color: $color-white

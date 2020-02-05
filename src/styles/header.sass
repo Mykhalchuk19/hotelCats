@@ -1,0 +1,94 @@
+.header
+  width: 100%
+  height: 62px
+  @include breakpoint($disp__tablet)
+    height: 76px
+  &__inner
+    width: 100%
+    height: 100%
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+  &__link-logo
+    padding-top: 7px
+    z-index: 10
+    cursor: pointer
+  &__logo
+    width: 46px
+    height: 48px
+    @include breakpoint($disp__tablet)
+      width: 66px
+      height: 58px
+  &__nav
+    left: -100%
+    width: 100%
+    height: 520px
+    position: absolute
+    transition: left 0.4s ease-in-out
+    z-index: 5
+    background-color: $color-orange
+    padding-top: 100px
+    padding-left: 10%
+    @include breakpoint($disp__tablet)
+      position: static
+      height: 76px
+      padding: 27px 0 0 
+      background-color: $color-white
+      width: 400px
+
+.nav
+  &__list
+    display: block
+    @include breakpoint($disp__tablet)
+      display: flex
+      justify-content: space-between
+  &__item:not(:last-child)
+    margin-bottom: 25px
+  &__item:last-child
+    margin-bottom: 35px
+  &__number-phone
+    font-family: $font-Rubik
+    font-size: 16px
+    font-weight: normal
+    color: $color-text
+    margin-bottom: 20px
+    @include breakpoint($disp__tablet)
+      display: none
+  &__social-list
+    display: flex
+    @include breakpoint($disp__tablet)
+      display: none
+  &__social-item:not(:last-child)
+    margin-right: 20px
+  &__social-link
+    cursor: pointer
+  &__hidden-checkbox
+    display: none
+  &__toggle
+    z-index: 10
+    padding-top: 20px
+    cursor: pointer 
+    @include breakpoint($disp__tablet)
+      display: none
+  &__toggle-span
+    position: relative
+    display: block
+    width: 24px
+    height: 2px
+    border-radius: 1px
+    background-color: #1A212F
+    transition: all .3s linear
+  &__toggle-span:not(:last-child)
+    margin-bottom: 5px
+  
+.nav__hidden-checkbox:checked ~ .nav__toggle .nav__toggle-first
+  top: 4px
+  transform: rotate(45deg)
+.nav__hidden-checkbox:checked ~ .nav__toggle .nav__toggle-second
+  opacity: 0
+.nav__hidden-checkbox:checked ~ .nav__toggle .nav__toggle-third
+  top: -10px
+  transform: rotate(-45deg)
+.nav__hidden-checkbox:checked ~ .header__nav
+  left: 0
+

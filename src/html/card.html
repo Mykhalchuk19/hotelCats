@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <svg style="display:none">
+      <symbol id="raw__orange" viewBox="0 0 21 18">
+        <path
+          d="M16.8031 6.52459C13.8387 8.22475 14.3435 13.1874 17.5591 13.1874C18.9459 13.1874 20.1462 12.1449 20.6806 10.812C21.9148 7.73361 19.3483 5.06439 16.8031 6.52459Z"
+          fill="#FF7236"
+        />
+        <path
+          d="M13.7586 7.13911C17.3154 7.13911 18.3804 1.0992 15.0012 0.106215C13.4617 -0.346048 11.711 0.739136 11.1487 2.72287C10.5178 4.94631 11.759 7.13911 13.7586 7.13911Z"
+          fill="#FF7236"
+        />
+        <path
+          d="M12.8437 17.8903C12.3498 17.7537 11.4731 17.6658 10.5555 17.6531C9.58551 17.6389 8.56997 17.7084 7.9129 17.8903C6.13824 18.3847 3.72348 17.1886 4.25331 14.7045C4.74338 12.408 6.50422 12.5389 6.92062 10.3625C7.34017 8.16298 8.97061 7.10147 10.5555 7.18444C12.0223 7.26144 13.4499 8.31922 13.8389 10.363C14.2529 12.5409 16.0101 12.4088 16.4994 14.7045C17.0312 17.1906 14.6114 18.3802 12.8437 17.8903Z"
+          fill="#FF7236"
+        />
+        <path
+          d="M7.49868 7.13932C8.50476 7.13932 9.36882 6.55499 9.84896 5.66068C11.2763 3.00141 8.93207 -0.680001 6.2558 0.10841C2.87084 1.10414 3.94382 7.13932 7.49868 7.13932Z"
+          fill="#FF7236"
+        />
+        <path
+          d="M5.89091 11.2099C7.03297 8.41561 4.32591 5.00232 1.74052 6.07629C-1.37374 7.36979 -0.000207816 12.9487 3.42404 12.9487C4.52296 12.9487 5.45682 12.2722 5.89091 11.2099Z"
+          fill="#FF7236"
+        />
+        <path
+          d="M12.8437 17.8902C12.3497 17.7537 11.473 17.6657 10.5554 17.653V7.1844C12.0223 7.2614 13.4498 8.31917 13.8388 10.363C14.2528 12.5408 16.01 12.4087 16.4994 14.7045C17.0311 17.1905 14.6113 18.3801 12.8437 17.8902Z"
+          fill="#FF7236"
+        />
+      </symbol>
+      <symbol id="raw" viewBox="0 0 21 18">
+        <path
+          d="M16.8031 6.52459C13.8387 8.22475 14.3435 13.1874 17.5591 13.1874C18.9459 13.1874 20.1462 12.1449 20.6806 10.812C21.9148 7.73361 19.3483 5.06439 16.8031 6.52459Z"
+          fill="#FFFEFD"
+        />
+        <path
+          d="M13.7586 7.13911C17.3154 7.13911 18.3804 1.0992 15.0012 0.106215C13.4617 -0.346048 11.711 0.739136 11.1487 2.72287C10.5178 4.94631 11.759 7.13911 13.7586 7.13911Z"
+          fill="#FFFEFD"
+        />
+        <path
+          d="M12.8437 17.8903C12.3498 17.7537 11.4731 17.6658 10.5555 17.6531C9.58551 17.6389 8.56997 17.7084 7.9129 17.8903C6.13824 18.3847 3.72348 17.1886 4.25331 14.7045C4.74338 12.408 6.50422 12.5389 6.92062 10.3625C7.34017 8.16298 8.97061 7.10147 10.5555 7.18444C12.0223 7.26144 13.4499 8.31922 13.8389 10.363C14.2529 12.5409 16.0101 12.4088 16.4994 14.7045C17.0312 17.1906 14.6114 18.3802 12.8437 17.8903Z"
+          fill="#FFFEFD"
+        />
+        <path
+          d="M7.49868 7.13932C8.50476 7.13932 9.36882 6.55499 9.84896 5.66068C11.2763 3.00141 8.93207 -0.680001 6.2558 0.10841C2.87084 1.10414 3.94382 7.13932 7.49868 7.13932Z"
+          fill="#FFFEFD"
+        />
+        <path
+          d="M5.89091 11.2099C7.03297 8.41561 4.32591 5.00232 1.74052 6.07629C-1.37374 7.36979 -0.000207816 12.9487 3.42404 12.9487C4.52296 12.9487 5.45682 12.2722 5.89091 11.2099Z"
+          fill="#FFFEFD"
+        />
+        <path
+          d="M12.8437 17.8902C12.3497 17.7537 11.473 17.6657 10.5554 17.653V7.1844C12.0223 7.2614 13.4498 8.31917 13.8388 10.363C14.2528 12.5408 16.01 12.4087 16.4994 14.7045C17.0311 17.1905 14.6113 18.3801 12.8437 17.8902Z"
+          fill="#FFFEFD"
+        />
+      </symbol>
+    </svg>
+    <div style="display:none" id="js-bg-body" class="body-bg"></div>
+    <div style="display:none" id="js-booking-pop-up" class="booking">
+      <button class="booking__close close js-close-pop-up">
+        <span class="close__line close__line-first"></span>
+        <span class="close__line close__line-second"></span>
+      </button>
+      <h2 class="booking__title">Забронировать номер</h2>
+      <form action="#" method="POST" class="booking__form">
+        <input type="text" class="booking__input booking__name" placeholder="Ваше имя" />
+        <input type="text" class="booking__input booking__name-cat" placeholder="Имя питомца" />
+        <input type="text" class="booking__input booking__number" placeholder="Телефон" />
+        <input type="text" class="booking__input booking__email" placeholder="E-mail" />
+        <p class="booking__date-arrival">Дата заезда</p>
+        <span class="booking__text">с</span>
+        <input type="text" class="booking__date booking__date-start" placeholder="26.01.2020" />
+        <span class="booking__text">по</span>
+        <input type="text" class="booking__date booking__date-end" placeholder="01.02.2020" />
+        <button id="js-btn-submit-booking" class="booking__button">
+          <span class="booking__button-text button-text">Забронировать место</span>
+          <svg class="booking__icon raw-icon">
+            <use xlink:href="#raw__orange"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div style="display:none" class="thank" id="js-thank-pop-up">
+      <button class="thank__close close  js-close-pop-up">
+        <span class="close__line close__line-first"></span>
+        <span class="close__line close__line-second"></span>
+      </button>
+      <h2 class="thank__title">Спасибо за заявку!</h2>
+      <p class="thank__text">Мы свяжемся с вами в ближайшее время</p>
+      <button id="js-btn-close-thank" class="thank__button">
+        <span class="thank__button-text button-text">Ок</span>
+        <svg class="thank__icon raw-icon">
+          <use xlink:href="#raw__orange"></use>
+        </svg>
+      </button>
+    </div>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <a class="header__link-logo" href="index.html"
+            ><img src="../assets/img/common/logo.svg" alt="logo" class="header__logo"
+          /></a>
+          <input type="checkbox" class="nav__hidden-checkbox" id="nav__checkbox" />
+          <label for="nav__checkbox" class="nav__toggle">
+            <span class="nav__toggle-span nav__toggle-first"></span>
+            <span class="nav__toggle-span nav__toggle-second"></span>
+            <span class="nav__toggle-span nav__toggle-third"></span>
+          </label>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html#why__we" class="nav__link">Почему мы?</a>
+              </li>
+              <li class="nav__item"><a href="catalog.html" class="nav__link">Номера</a></li>
+              <li class="nav__item"><a href="index.html#recall" class="nav__link">Отзывы</a></li>
+              <li class="nav__item">
+                <a href="index.html#find" class="nav__link">Как нас найти?</a>
+              </li>
+            </ul>
+            <p class="nav__number-phone">8(800) 333-55-99</p>
+            <ul class="nav__social-list">
+              <li class="nav__social-item">
+                <a href="#" class="nav__social-link"
+                  ><img src="../assets/img/social/facebook.svg" alt="fb" class="nav__social-image"
+                /></a>
+              </li>
+              <li class="nav__social-item">
+                <a href="#" class="nav__social-link"
+                  ><img
+                    src="../assets/img/social/instagram.svg"
+                    alt="inst"
+                    class="nav__social-image"
+                /></a>
+              </li>
+              <li class="nav__social-item">
+                <a href="#" class="nav__social-link"
+                  ><img src="../assets/img/social/vk.svg" alt="vk" class="nav__social-image"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="card">
+        <div class="card__container">
+          <div class="card__images">
+            <picture class="card__picture-main">
+              <source
+                srcset="../src/assets/img/main__card/main-image__desktop.jpg"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="../src/assets/img/main__card/main-image__tablet.jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="../src/assets/img/main__card/main-image__mobile.jpg"
+                media="(min-width: 1px)"
+              />
+              <img
+                src="../assets/img/main__card/main-image__desktop.jpg"
+                class="card__image-main"
+                alt="image-main"
+              />
+            </picture>
+            <ul class="card__image-list">
+              <li class="card__image-item">
+                <picture class="card__picture-secondary">
+                  <source
+                    srcset="../src/assets/img/main__card/image1-desktop.jpg"
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="../src/assets/img/main__card/image1-tablet.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="../src/assets/img/main__card/image1-mobile.jpg"
+                    media="(min-width: 1px)"
+                  />
+                  <img
+                    src="../assets/img/main__card/image1-desktop.jpg"
+                    class="card__image-secondary"
+                    alt="image-secondary"
+                  />
+                </picture>
+              </li>
+              <li class="card__image-item">
+                <picture class="card__picture-secondary">
+                  <source
+                    srcset="../src/assets/img/main__card/image2-desktop.jpg"
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="../src/assets/img/main__card/image2-tablet.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="../src/assets/img/main__card/image2-mobile.jpg"
+                    media="(min-width: 1px)"
+                  />
+                  <img
+                    src="../assets/img/main__card/image2-desktop.jpg"
+                    class="card__image-secondary"
+                    alt="image-secondary"
+                  />
+                </picture>
+              </li>
+              <li class="card__image-item">
+                <picture class="card__picture-secondary">
+                  <source
+                    srcset="../src/assets/img/main__card/image3-desktop.jpg"
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="../src/assets/img/main__card/image3-tablet.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="../src/assets/img/main__card/image3-mobile.jpg"
+                    media="(min-width: 1px)"
+                  />
+                  <img
+                    src="../assets/img/main__card/image3-desktop.jpg"
+                    class="card__image-secondary"
+                    alt="image-secondary"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="card__content">
+            <h3 class="card__title">Супер-Люкс</h3>
+            <p class="card__text">Размеры (ШхГхВ) - 180х160х180 см</p>
+            <p class="card__text">Площадь - 2,88 м<sup>2</sup></p>
+            <p class="card__text">Оснащение номера</p>
+            <ul class="card__list">
+              <li class="card__item">
+                <img src="../assets/img/card/sunbed.svg" alt="sunbed" class="card__icon" /><span
+                  class="card__text"
+                  >Лежак</span
+                >
+              </li>
+              <li class="card__item">
+                <img src="../assets/img/card/house.svg" alt="house" class="card__icon" /><span
+                  class="card__text"
+                  >Домик</span
+                >
+              </li>
+              <li class="card__item">
+                <img
+                  src="../assets/img/card/playground.svg"
+                  alt="playgorund"
+                  class="card__icon"
+                /><span class="card__text">Игровой комплекс - 3 яруса</span>
+              </li>
+              <li class="card__item">
+                <img src="../assets/img/card/claw.svg" alt="claw" class="card__icon" /><span
+                  class="card__text"
+                  >Когкеточка</span
+                >
+              </li>
+            </ul>
+            <p class="card__text">
+              Цена за сутки:
+              <span class="card__price">600₽</span>
+            </p>
+            <button class="js-btn-pop-up card__button">
+              <span class="card__button-text button-text">Забронировать</span>
+              <svg class="card__icon raw-icon">
+                <use xlink:href="#raw__orange"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="room">
+        <div class="room__container">
+          <h2 class="room__title">Другие номера</h2>
+          <div class="room__slider">
+            <div class="room__slide">
+              <picture class="room__picture">
+                <source
+                  srcset="../src/assets/img/room/room1__desktop.png"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="../src/assets/img/room/room1__tablet.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="../src/assets/img/room/room1__mobile.png"
+                  media="(min-width: 1px)"
+                />
+                <img src="../assets/img/room/room1__desktop.png" class="room__image" alt="room" />
+              </picture>
+              <div class="room__content">
+                <a href="card.html" class="room__name-link">Эконом плюс</a>
+                <ul class="room__service-list">
+                  <li class="room__service-item">Площадь - 0,90 м<sup>2</sup></li>
+                  <li class="room__service-item">Размеры (ШхГхВ) 90х100х180 см</li>
+                  <li class="room__service-item">Цена за сутки: 200₽</li>
+                </ul>
+                <button class="js-btn-pop-up room__button">
+                  <span class="room__button-text button-text">Забронировать</span>
+                  <svg class="room__icon raw-icon">
+                    <use xlink:href="#raw__orange"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="room__slide">
+              <picture class="room__picture">
+                <source
+                  srcset="../src/assets/img/room/room2__desktop.png"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="../src/assets/img/room/room2__tablet.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="../src/assets/img/room/room2__mobile.png"
+                  media="(min-width: 1px)"
+                />
+                <img src="../assets/img/room/room2__desktop.png" class="room__image" alt="room" />
+              </picture>
+              <div class="room__content">
+                <a href="card.html" class="room__name-link">Комфорт</a>
+                <ul class="room__service-list">
+                  <li class="room__service-item">Площадь - 1,13 м<sup>2</sup></li>
+                  <li class="room__service-item">Размеры (ШхГхВ) 100х125х180 см</li>
+                  <li class="room__service-item">Цена за сутки: 250₽</li>
+                </ul>
+                <button class="js-btn-pop-up room__button">
+                  <span class="room__button-text button-text">Забронировать</span>
+                  <svg class="room__icon raw-icon">
+                    <use xlink:href="#raw__orange"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="room__slide">
+              <picture class="room__picture">
+                <source
+                  srcset="../src/assets/img/room/room3__desktop.png"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="../src/assets/img/room/room3__tablet.png"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="../src/assets/img/room/room3__mobile.png"
+                  media="(min-width: 1px)"
+                />
+                <img src="../assets/img/room/room3__desktop.png" class="room__image" alt="room" />
+              </picture>
+              <div class="room__content">
+                <a href="card.html" class="room__name-link">Сьют</a>
+                <ul class="room__service-list">
+                  <li class="room__service-item">Площадь - 1,56 м<sup>2</sup></li>
+                  <li class="room__service-item">Размеры (ШхГхВ) 125х125х180 см</li>
+                  <li class="room__service-item">Цена за сутки: 350₽</li>
+                </ul>
+                <button class="js-btn-pop-up room__button">
+                  <span class="room__button-text button-text">Забронировать</span>
+                  <svg class="room__icon raw-icon">
+                    <use xlink:href="#raw__orange"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact__data">
+          <h2 class="contact__title">Как нас найти?</h2>
+          <p class="contact__subtitle">Адрес</p>
+          <p class="contact__text">
+            Санкт-Петербург,<br />
+            ул Большая Конюшенная, д 19
+          </p>
+          <p class="contact__subtitle">Режим работы</p>
+          <p class="contact__text">Ежедневно, с 9:00 до 20:00</p>
+          <p class="contact__subtitle">Телефон</p>
+          <p class="contact__text">8 (800) 333-55-99</p>
+          <p class="contact__subtitle">E-mail</p>
+          <p class="contact__text">info@cat-hotel.ru</p>
+          <p class="contact__subtitle">Социальные сети</p>
+          <ul class="contact__social-list">
+            <li class="contact__social-item">
+              <a href="#" class="contact__social-link"
+                ><img
+                  src="../assets/img/social/facebook.svg"
+                  alt="facebook"
+                  class="contact__social-image"
+              /></a>
+            </li>
+            <li class="contact__social-item">
+              <a href="#" class="contact__social-link"
+                ><img
+                  src="../assets/img/social/instagram.svg"
+                  alt="instagram"
+                  class="contact__social-image"
+              /></a>
+            </li>
+            <li class="contact__social-item">
+              <a href="#" class="contact__social-link"
+                ><img src="../assets/img/social/vk.svg" alt="vk" class="contact__social-image"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact__map">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.5502761864664!2d25.323541305800767!3d50.74682951947028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599eba185965d%3A0xd25274a2228db86c!2z0JvRg9GG0LosINCS0L7Qu9GL0L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1580757724821!5m2!1sru!2sua"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__primary">
+          <div class="footer__logo">
+            <a href="index.html" class="footer__link"
+              ><img src="../assets/img/common/logo.svg" alt="footer__logo" class="logo"
+            /></a>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="index.html#why__we" class="footer__nav-link nav__link">Почему мы?</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="catalog.html" class="footer__nav-link nav__link">Номера</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="index.html#recall" class="footer__nav-link nav__link">Отзывы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="index.html#find" class="footer__nav-link nav__link">Как нас найти?</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__secondary">
+          <p class="footer__copyright">© 2019 Все права защищены</p>
+          <p class="footer__policy">Политика конфиденциальности</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

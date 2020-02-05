@@ -1,0 +1,72 @@
+.card
+  width: 100%
+  height: auto
+  padding: 45px 0 50px 0
+  @include breakpoint($disp__tablet)
+    padding: 60px 0 100px 0
+  @include breakpoint($disp__desktop)
+    padding: 70px 0 130px 0
+  &__container
+    width: 290px
+    margin: 0 auto
+    @include breakpoint($disp__tablet)
+      width: 687px
+      display: flex
+      justify-content: space-between
+    @include breakpoint($disp__desktop)
+      width: 88%
+      max-width: 1170px
+  &__images
+    width: 100%
+    margin-bottom: 35px
+    @include breakpoint($disp__tablet)
+      width: 53%
+      margin-bottom: 0
+    @include breakpoint($disp__desktop)
+      display: flex
+      justify-content: space-between
+      flex-direction: row-reverse
+  &__image-main
+    margin-bottom: 25px
+  &__image-list
+    width: 100%
+    display: flex
+    justify-content: space-between
+    @include breakpoint($disp__desktop)
+      flex-direction: column
+      height: 400px
+  &__content
+    width: 100%
+    height: auto
+    @include breakpoint($disp__tablet)
+      width: 40%
+    @include breakpoint($disp__desktop)
+      width: 41%
+  &__title
+    font-family: $font-Rubik
+    font-size: 28px
+    font-weight: bold
+    color: $color-text
+    margin-bottom: 30px
+    @include breakpoint($disp__tablet)
+      font-size: 36px
+      margin-bottom: 20px
+  &__text
+    font-family: $font-Lato
+    font-size: 15px
+    margin-bottom: 20px
+    color: $color-text
+    @include breakpoint($disp__tablet)
+      margin-bottom: 15px
+  &__item
+    margin-bottom: 20px
+  &__icon
+    margin-right: 15px
+    height: 14px
+  &__price
+    font-size: 16px
+    font-weight: 600
+  &__button
+    @include button__booking($color-white, $color-white, #FF7236, #FF7236)
+  &__button:hover
+    @include button__booking__hover(#FF7236, $color-white, $color-white)

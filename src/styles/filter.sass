@@ -1,0 +1,102 @@
+.filter
+  width: 290px
+  height: auto
+  padding: 15px 25px 60px 25px
+  border-radius: 10px
+  box-shadow: 0 0 10px lightgrey
+  position: absolute
+  background-color: $color-white
+  top: 100px
+  display: none
+  z-index: 25
+  left: 50%
+  transform: translate(-50%, 0)
+  @include breakpoint($disp__desktop)
+    position: static
+    display: block !important
+    transform: none
+    box-shadow: none
+    width: 210px
+    padding: 0
+    z-index: 1
+  &__close
+    width: 20px
+    height: 20px
+    position: relative
+    background-color: #fff
+    border: none
+    margin-left: 90%
+    @include breakpoint($disp__desktop)
+      display: none
+  &__close-line
+    position: absolute
+    display: block
+    height: 2px
+    width: 20px
+    background-color: $color-text
+  &__close-line-first
+    transform: rotate(45deg)
+  &__close-line-second
+    transform: rotate(-45deg)
+  &__group
+    width: 100%
+    height: auto
+    margin-bottom: 30px
+  &__group-name
+    font-family: $font-Lato
+    font-size: 16px
+    font-weight: 500
+    color: $color-text
+    margin-bottom: 20px
+  &__input
+    width: 100px
+    height: 35px
+    border: 1px solid #e1e1e1
+    padding-left: 10px
+    font-family: $font-Lato
+    font-size: 14px
+    @include breakpoint($disp__desktop)
+      width: 70px
+  &__subgroup
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    margin-bottom: 15px
+  &__subgroup input[type="checkbox"]
+    display: none
+  &__button
+    width: 240px
+    height: 42px
+    border-radius: 25px
+    border: 1px solid $color-orange
+    font-family: $font-Lato
+    font-size: 14px
+    cursor: pointer
+    @include breakpoint($disp__desktop)
+      width: 170px
+  &__pick-up-btn
+    background-color: $color-orange
+    margin-bottom: 20px
+  &__discard-btn
+    background-color: $color-white
+
+.group-filter
+  &__label::after
+    float: left
+    content: ' '
+    color: $color-text
+    text-align: center
+    width: 24px
+    height: 24px
+    background: #fff
+    border: 1px solid #e1e1e1
+  &__text
+    padding-top: 3px
+    padding-left: 10px
+    font-family: $font-Lato
+    font-size: 14px
+    font-weight: 500
+    color: $color-text
+
+.filter__subgroup input[type='checkbox']:checked + .group-filter__label::after 
+  content: '\2714'

@@ -1,0 +1,66 @@
+.services
+  width: 100%
+  height: auto
+  padding: 70px 0 
+  @include breakpoint($disp__tablet)
+    padding: 120px 0
+  @include breakpoint($disp__desktop)
+    padding: 135px 0
+  &__title
+    @include standard__title
+  &__list
+    width: 100%
+    @include breakpoint($disp__tablet)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between    
+  &__item
+    width: 100%
+    height: auto
+    background-color: #fff
+    border-radius: 10px
+    padding: 25px 0 0 25px
+    color: $color-text
+    text-align: left
+    box-shadow: 0 0 10px #F9F8F7
+    @include breakpoint($disp__tablet)
+      width: 47%
+    @include breakpoint($disp__desktop)
+      width: 32%
+      max-width: 450px
+  &__image
+    height: 60px
+    width: 60px
+    border-radius: 50%
+    background-color: $color-orange
+    position: relative
+    margin-bottom: 30px
+    @include breakpoint($disp__tablet)
+      height: 75px
+      width: 75px
+    @include breakpoint($disp__desktop)
+      height: 90px
+      width: 90px
+  &__icon
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    @include breakpoint($disp__tablet)
+      height: 40px
+      width: 40px
+    @include breakpoint($disp__desktop)
+      height: 55px
+      width: 55px
+  &__name
+    font-family: $font-Rubik
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 15px
+    @include breakpoint($disp__desktop)
+      font-size: 22px
+  &__text
+    font-family: $font-Lato
+    font-size: 16px
+    line-height: 140%
+    margin-bottom: 25px

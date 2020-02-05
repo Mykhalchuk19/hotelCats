@@ -1,0 +1,83 @@
+.share
+  width: 100%
+  height: 100%
+  padding: 50px 0
+  @include breakpoint($disp__tablet)
+    padding: 100px 0
+  @include breakpoint($disp__desktop)
+    padding: 120px 0
+  &__container
+    padding: 50px 0 220px 0
+    width: 290px
+    height: auto
+    margin: 0 auto
+    background-image: url('../assets/img/share/bg-mobile.jpg')
+    background-repeat: no-repeat
+    color: $color-text
+    text-align: center
+    @include breakpoint($disp__tablet)
+      background-image: url('../assets/img/share/bg-tablet.jpg')
+      text-align: left
+      width: 678px
+      padding: 65px 0 70px 45px
+    @include breakpoint($disp__desktop)
+      background-image: url('../assets/img/share/bg-desktop.jpg')
+      text-align: left
+      width: 89%
+      max-width: 1170px
+      padding: 70px 0 75px 270px
+  &__seven-day
+    font-family: $font-Rubik
+    font-weight: bold
+    font-size: 24px
+    margin-bottom: 10px
+    @include breakpoint($disp__tablet)
+      font-size: 36px
+  &__free
+    font-family: $font-Rubik
+    font-weight: bold
+    font-size: 37px
+    margin-bottom: 20px
+    @include breakpoint($disp__tablet)
+      font-size: 56px
+  &__text
+    font-family: $font-Lato
+    font-weight: normal
+    font-size: 15px
+    line-height: 140%
+    margin-bottom: 30px
+    @include breakpoint($disp__desktop)
+      font-size: 16px
+  &__link
+    position: relative
+    display: block
+    margin: 0 auto
+    width: 206px
+    height: 50px
+    background-color: $color-white
+    border-radius: 25px
+    border: 1px solid $color-white
+    color: $color-text
+    font-family: $font-Lato
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    cursor: pointer
+    @include breakpoint($disp__tablet)
+      margin: 0
+    .link-text
+      position: absolute
+      left: 25px
+      top: 50%
+      transform: translate(0,-50%)
+    .raw-icon
+      margin-top: 5px
+      margin-right: 7px
+      float: right
+      padding: 5px
+      height: 36px
+      width: 36px
+      border-radius: 50%
+      background-color: #FF7236
+  &__link:hover
+    color: #FF7236

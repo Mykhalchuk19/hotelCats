@@ -1,0 +1,64 @@
+$disp__desktop: min-width 1280px
+$disp__tablet: min-width 768px
+$disp__mobile: min-width 320px
+
+@mixin button__booking($color, $background-icon, $background-button, $color-border)
+  position: relative
+  width: 206px
+  height: 50px
+  background-color: $background-button
+  border-radius: 25px
+  border: 1px solid $color-border
+  color: $color
+  font-family: $font-Lato
+  font-style: normal
+  font-weight: 600
+  font-size: 16px
+  cursor: pointer
+  .button-text
+    position: absolute
+    left: 25px
+    top: 50%
+    transform: translate(0,-50%)
+  .raw-icon
+    margin-right: 7px
+    float: right
+    padding: 5px
+    height: 36px
+    width: 36px
+    border-radius: 50%
+    background-color: $background-icon
+
+@mixin button__booking__hover($color, $background-icon, $background-button)
+  background-color: $background-button
+  color: $color
+  .raw-icon
+    background-color: $background-icon
+
+@mixin standard__title
+  font-family: $font-Rubik
+  font-weight: bold
+  font-size: 28px
+  color: $color-text
+  text-align: center
+  margin-bottom: 40px
+  @include breakpoint($disp__tablet)
+    font-size: 36px
+
+@mixin standard__container
+  width: 290px
+  height: auto
+  margin: 0 auto
+  @include breakpoint($disp__tablet)
+    width: 687px
+  @include breakpoint($disp__desktop)
+    width: 1030px
+
+@mixin standard__link
+  font-family: $font-Rubik
+  font-size: 20px
+  font-weight: 500
+  text-decoration: none
+  color: $color-text
+  @include breakpoint($disp__desktop)
+    font-size: 22px

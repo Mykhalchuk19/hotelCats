@@ -1,0 +1,74 @@
+.room
+  width: 100%
+  height: auto
+  background-color: #fffefd
+  margin-bottom: 70px
+  @include breakpoint($disp__tablet)
+    margin-bottom: 120px
+  @include breakpoint($disp__desktop)
+    margin-bottom: 150px
+  &__container
+    @include standard__container
+  &__title
+    @include standard__title
+    @include breakpoint($disp__tablet)
+      margin-bottom: 60px
+    @include breakpoint($disp__desktop)
+      margin-bottom: 70px
+  &__slider
+    width: 100%
+    height: auto
+  &__slide
+    width: 100%
+    height: auto
+    color: $color-text
+    margin-bottom: 30px
+    @include breakpoint($disp__tablet)
+      position: relative
+      margin-bottom: 40px
+    @include breakpoint($disp__desktop)
+      margin-bottom: 50px
+  &__content
+    padding: 25px 0 0 20px
+    background-color: $color-white
+    @include breakpoint($disp__tablet)
+      position: absolute
+      z-index: 10
+      left: 50%
+      top: 20px
+      border-radius: 10px
+      width: 340px
+      padding: 40px 0 0 40px
+      box-shadow: 0 0 10px lightgrey
+    @include breakpoint($disp__desktop)
+      top: 60px
+      width: 500px
+      padding-left: 50px
+  &__name-link
+    @include standard__link
+  &__name-link:hover
+    color: $color-orange
+  &__service-list
+    padding-top: 25px
+  &__service-item
+    font-family: $font-Lato
+    font-size: 15px
+    line-height: 140%
+    margin-bottom: 15px
+  &__service-item::before
+    display: inline-block
+    margin-right: 10px
+    height: 10px
+    width: 10px
+    border-radius: 50%
+    content: " "
+    background-color: $color-orange
+  &__button
+    margin-bottom: 20px
+    @include button__booking($color-white, $color-white, #FF7236, #FF7236)
+    @include breakpoint($disp__tablet)
+      margin-bottom: 35px
+  &__button:hover 
+    border: 1px solid #FF7236
+    @include button__booking__hover(#FF7236, $color-white, $color-white)
+

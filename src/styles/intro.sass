@@ -1,0 +1,82 @@
+.intro
+  width: 100%
+  height: 457px
+  background-image: url('../assets/img/intro/mobile-bg.png')
+  background-repeat: no-repeat
+  background-size: 100% 457px
+  @include breakpoint(min-width 410px)
+    height: 547px
+    background-size: 100% 547px
+  @include breakpoint(min-width 530px)
+    background-image: url('../assets/img/intro/tablet-bg.png')
+    height: 868px
+    background-size: 100% 868px
+  @include breakpoint(min-width 930px)
+    background-image: url('../assets/img/intro/desktop-bg.png')
+    height: 504px
+    background-size: 100% 504px
+  &__inner
+    width: 100%
+    height: 100%
+    text-align: center
+    color: $color-text
+    padding-top: 50px
+    @include breakpoint(min-width 530px)
+      padding-top: 130px
+    @include breakpoint(min-width 930px)
+      padding-left: 200px
+      text-align: left
+  &__city
+    font-family: $font-Lato
+    font-size: 12px
+    margin-bottom: 12px
+    @include breakpoint($disp__tablet)
+      font-size: 14px
+  &__title
+    font-family: $font-Rubik
+    font-weight: bold
+    font-size: 44px
+    margin-bottom: 22px
+    @include breakpoint($disp__tablet)
+      font-size: 62px
+  &__subtitle
+    font-family: $font-Lato
+    font-size: 16px
+    font-weight: 500
+    margin-bottom: 40px
+    @include breakpoint($disp__tablet)
+      font-size: 20px
+  &__link
+    position: relative
+    margin: 0 auto
+    display: block
+    width: 206px
+    height: 50px
+    background-color: $color-white
+    border-radius: 25px
+    border: 1px solid $color-white
+    color: $color-text
+    font-family: $font-Lato
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    cursor: pointer
+    @include breakpoint(min-width 930px)
+      margin: 0
+    margin 
+    .link-text
+      position: absolute
+      left: 25px
+      top: 50%
+      transform: translate(0,-50%)
+    .raw-icon
+      margin-top: 5px
+      margin-right: 7px
+      float: right
+      padding: 5px
+      height: 36px
+      width: 36px
+      border-radius: 50%
+      background-color: #FF7236
+  &__link:hover
+    color: #FF7236

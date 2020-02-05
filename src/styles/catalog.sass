@@ -1,0 +1,150 @@
+.catalog
+  width: 100%
+  height: auto
+  padding-top: 35px 
+  &__wrapper
+    width: 290px
+    height: auto
+    margin: 0 auto
+    @include breakpoint($disp__tablet)
+      width: 680px
+    @include breakpoint($disp__desktop)
+      width: 89%
+      max-width: 1170px
+  &__head
+    @include breakpoint($disp__tablet)
+      display: flex
+      justify-content: space-between
+  &__title
+    font-family: $font-Rubik
+    font-weight: bold
+    font-size: 28px
+    color: $color-text
+    text-align: left
+    margin-bottom: 40px
+    @include breakpoint($disp__tablet)
+      font-size: 36px
+  &__control
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+    @include breakpoint($disp__tablet)
+      width: 50%
+    @include breakpoint($disp__desktop)
+      justify-content: flex-end
+  &__filter-btn
+    height: 35px
+    width: 110px
+    border-radius: 25px
+    box-shadow: 0 0 10px lightgrey
+    border: none
+    background-color: #fff
+    font-family: $font-Lato
+    font-size: 14px
+    font-weight: 600
+    color: $color-text
+    cursor: pointer
+    @include breakpoint($disp__desktop)
+      display: none
+  &__filter-btn:hover
+    color: $color-orange
+  &__select
+    height: 35px
+    width: 155px
+    padding-left: 10px
+    appearance: none
+    background-image: url('../assets/img/catalog/select.svg')
+    background-repeat: no-repeat
+    background-size: 15px 10px
+    background-position: 120px 50%
+    border: none
+    border-radius: 25px
+    background-color: #fff
+    font-family: $font-Lato
+    font-size: 14px
+    font-weight: 600
+    color: $color-text
+    box-shadow: 0 0 10px lightgrey
+    outline: none
+    cursor: pointer
+    option
+      outline: none
+      background-color: #fff
+      font-family: $font-Lato
+      font-size: 14px
+      font-weight: 600
+      color: $color-text
+      box-shadow: 0 0 10px lightgrey
+  &__select::-ms-expand 
+    display: none
+
+  &__inner
+    @include breakpoint($disp__desktop)
+      display: flex
+      justify-content: space-between
+  &__list
+    width: 100%
+    height: auto
+    @include breakpoint($disp__tablet)
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    @include breakpoint($disp__desktop)
+      width: 870px
+  &__item
+    width: 100%
+    height: auto
+    @include breakpoint($disp__tablet)
+      width: 324px
+      align-items: flex-start
+    @include breakpoint($disp__desktop)
+      width: 270px
+  &__item:not(:last-child)
+    margin-bottom: 30px
+  &__card
+    width: 290px
+    height: auto
+    @include breakpoint($disp__tablet)
+      width: 100%
+.card-catalog
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  &__image
+    width: 100%
+    height: auto
+  &__content
+    height: auto
+    width: 100%
+    padding: 20px 0 20px 25px
+    background-color: #fff
+    border-radius: 0 0 10px 10px
+    border: 1px solid #e1e1e1
+    border-top: none
+  &__link
+    @include standard__link
+  &__link:hover
+    color: $color-orange
+  &__list
+    padding-top: 20px
+  &__item
+    font-family: $font-Lato
+    color: $color-text
+    font-size: 14px
+    font-weight: normal
+    margin-bottom: 15px
+  &__icon
+    height: 13px
+    padding: 0 0 0 5px
+  &__price
+    font-weight: 600
+    font-size: 17px
+  &__button
+    @include button__booking($color-white, $color-white, #FF7236, #FF7236)
+    @include breakpoint($disp__mobile)
+      font-size: 14px
+  &__button:hover
+    border: 1px solid #FF7236
+    @include button__booking__hover(#FF7236, $color-white, $color-white)

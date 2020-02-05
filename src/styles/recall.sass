@@ -1,0 +1,67 @@
+.recall
+  width: 100%
+  height: auto
+  margin-bottom: 70px
+  @include breakpoint($disp__tablet)
+    margin-bottom: 120px
+  @include breakpoint($disp__desktop)
+    margin-bottom: 150px
+  &__container
+    width: 290px
+    height: auto
+    margin: 0 auto
+    @include breakpoint($disp__tablet)
+      width: 500px
+    @include breakpoint($disp__desktop)
+      width: 1070px
+  &__title
+    @include standard__title
+  &__slider
+    width: 100%
+    height: auto
+    @include breakpoint($disp__desktop)
+      width: 100%
+  &__slide
+    width: 100%
+    height: auto
+    border: 1px solid $color-orange
+    padding: 25px 10px 25px 25px
+    border-radius: 10px
+    margin-bottom: 30px
+    @include breakpoint($disp__tablet)
+      width: 280px
+    @include breakpoint($disp__desktop)
+  &__content
+    width: 100%
+    display: flex
+    justify-content: space-between
+  &__quotes
+    font-family: $font-Lato
+    font-size: 54px
+    font-weight: 500
+    color: $color-orange
+    margin-right: 20px
+  &__text
+    font-family: $font-Lato
+    font-size: 15px
+    font-weight: 400
+    color: $color-text
+    line-height: 140%
+    @include breakpoint($disp__tablet)
+      margin-bottom: 20px
+  &__client-data
+    display: none
+    @include breakpoint($disp__tablet)
+      display: flex
+      justify-content: space-between
+      padding-left: 35px
+      padding-right: 10px
+  &__client-name, &__date
+    font-family: $font-Lato
+    font-size: 14px
+    color: #848484
+
+
+//-------slider-------
+.recall .slick-slide
+  margin-right: 20px
