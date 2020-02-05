@@ -15,7 +15,7 @@ module.exports = {
     filename: 'js/[name].js',
   },
   optimization: {
-    splitChunks: {
+    splitChunks: { 
       chunks: 'all',
       name: false,
     },
@@ -25,18 +25,27 @@ module.exports = {
     new CopyWebpackPlugin([{ from: Path.resolve(__dirname, '../public'), to: 'public' }]),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: Path.resolve(__dirname, '../src/html/index.html'),
-      chunks: ["index"]
+      template: Path.resolve(__dirname, '../src/index.html'),
+      chunks: ["index"],
+      minify: {
+        collapseWhitespace: false
+    }
     }),
     new HtmlWebpackPlugin({
       filename: "catalog.html",
-      template: Path.resolve(__dirname, '../src/html/catalog.html'),
-      chunks: ["index", "catalog"]
+      template: Path.resolve(__dirname, '../src/catalog.html'),
+      chunks: ["index", "catalog"],
+      minify: {
+        collapseWhitespace: false
+    }
     }),
     new HtmlWebpackPlugin({
       filename: "card.html",
-      template: Path.resolve(__dirname, '../src/html/card.html'),
-      chunks: ["index"]
+      template: Path.resolve(__dirname, '../src/card.html'),
+      chunks: ["index"],
+      minify: {
+        collapseWhitespace: false
+    }
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
